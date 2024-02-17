@@ -1,0 +1,282 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+*:focus{
+	outline:none;
+}
+
+a{
+	text-decoration:none;
+}
+
+ul{
+	list-style: none;
+}
+body{
+	background-color: #c0c2cd;
+	font-family: "Open sans", sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+@media (max-width:767px){
+	body{
+		background-color: white;
+		
+	}
+}
+
+
+.wrapper{
+	background-color: white;
+	min-width:700px;
+	padding:10px;
+	border-radius:10px;
+	display: flex;
+	gap:30px;
+}
+
+@media (max-width:767px){
+	.wrapper{
+		flex-direction: column;
+		min-width: 100%;
+		
+		
+	}
+}
+.wrapper .left-content{
+	background-color: #f2f4f8;
+	max-width: 350px;
+	padding:30px;
+	border-radius:10px;
+	
+}
+@media (max-width:767px){
+	.wrapper .left-content{
+		min-width: 100%;
+		
+	}
+}
+
+.wrapper .left-content .toogle-checbox{
+	position: relative;
+	
+}
+
+.wrapper .left-content .toogle-checbox::before{
+	content: "";
+	position: absolute;
+	width:20px;
+	height: 20px;
+	border-radius:4px;
+	background-color: blue;
+	
+	
+}
+
+.wrapper .left-content .toogle-checbox::after{
+	content: "";
+	position: absolute;
+	width:10px;
+	height: 10px;
+	border-radius:50%;
+	background-color: white;
+	left:5px;
+	top:5px;
+	
+
+	
+	
+}
+.wrapper .left-content h2{
+	font-size:17px;
+	line-height: 1.7;
+	margin-top:50px;
+}
+
+.wrapper .left-content .title p{
+	color:grey;
+	font-size:12px;
+	margin-top:10px;
+	
+}
+
+.wrapper .left-content .container-box {
+	background-color: #2d3346;
+	border-radius:10px;
+	padding:20px;
+	margin-top:50px;
+	position: relative;
+		
+}
+.wrapper .left-content .container-box .quotes{
+	position: absolute;
+	top:-13px;
+	color:white;
+	font-size:40px;
+	opacity: 0.1;
+		
+}
+
+
+.wrapper .left-content .container-box span {
+	display: block;
+	margin: 0;
+	color:white;
+	font-size:11px;
+	line-height: 1.7;
+	
+	
+	
+}
+
+
+.wrapper .left-content .container-box .avatar {
+	display:flex;
+	align-items: center;
+	margin-top:10px;	
+} 
+
+
+.wrapper .left-content .container-box .avatar img{
+	width:30px;
+	height:30px;
+	margin-right:10px;
+	
+	
+} 
+
+
+
+.wrapper .left-content .container-box .avatar span {
+	font-size:9px;
+	
+} 
+.wrapper .left-content .container-box .avatar span:last-of-type {
+	color:grey;
+	margin-top:5px;
+	display: block;
+	
+} 
+
+.wrapper .icon{
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+
+.wrapper .icon li{
+	width:8px;
+	height:8px;
+	border-radius:50%;
+	background-color: #2d3346;
+	margin-right: 5px
+	
+	
+}
+
+.wrapper .icon li.active{
+	background-color: #cdcfd6;	
+}
+
+
+.wrapper .right-side {
+	width:50%;
+}
+
+@media (max-width:767px){
+	.wrapper .right-side{
+		min-width: 100%;
+		
+		
+	}
+}
+.wrapper .right-side h2{
+	font-size:15px;
+	margin-top:20px;
+}
+
+.wrapper .right-side p{
+	font-size:14px;
+	color:grey;
+	margin-top:20px;
+	margin-bottom:40px;
+}
+.wrapper .right-side .main-input{
+	display: block;
+	width:100%;
+	padding:10px;
+	border:none;
+	border:1px solid #eee;
+	border-radius:6px;
+	margin-bottom:20px;
+}
+.wrapper .right-side label{
+	color:grey;
+	font-size: 13px;
+	margin-bottom:5px;
+	display: block;
+
+	
+}
+.wrapper .right-side .main-input::placeholder{
+	color:black;
+	font-size:12px;
+}
+
+.wrapper .right-side .password > div{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+}
+.wrapper .right-side .password > div a{
+	font-size:13px ;
+	margin-bottom:5px;
+	color:green;
+		
+	
+}
+.wrapper .right-side .password input{
+	display: block;
+	width:100%;
+	padding:10px;
+	border:none;
+	border:1px solid #eee;
+	border-radius:6px;
+}
+.wrapper .right-side .password input::placeholder{
+	color:black;
+	font-size:40px;
+	
+}
+
+.wrapper .right-side .btn{
+	width: 100%;
+	padding:10px;
+	color:white;
+	font-size:13px;
+	background-color: #3c37ff;
+	border:none;
+	margin-top:20px;
+	border-radius:6px;
+}
+
+.wrapper .right-side .footer p{
+	font-size:13px;
+	text-align: center;
+}
+.wrapper .right-side .footer span{
+	color:#3c37ff;
+}
